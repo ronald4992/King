@@ -1,4 +1,4 @@
-/* ── RESET ─────────────────────────────────────────────── */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -10,7 +10,7 @@ button { cursor: pointer; font-family: inherit; }
 ul { list-style: none; }
 img { display: block; }
 
-/* ── HEADER ─────────────────────────────────────────────── */
+/* header*/
 .header {
   background-color: #ffffff;
   border-bottom: 2px solid #e0ddd4;
@@ -50,7 +50,6 @@ img { display: block; }
   font-weight: 700;
 }
 
-/* Logo centrado (posición absoluta para centrarlo realmente) */
 .header-logo {
   position: absolute;
   left: 50%;
@@ -59,10 +58,9 @@ img { display: block; }
 .header-logo img {
   height: 38px;
   filter: invert(65%) sepia(80%) saturate(400%) hue-rotate(5deg) brightness(110%);
-  /* efecto dorado sobre blanco */
 }
 
-/* Derecha del header */
+
 .header-right {
   display: flex;
   align-items: center;
@@ -97,7 +95,6 @@ img { display: block; }
 }
 .btn-register:hover { color: #007a3d; text-decoration: underline; }
 
-/* Dropdown */
 .nav-dropdown { position: relative; height: 100%; display: flex; align-items: center; }
 .dropdown-trigger {
   background: none;
@@ -141,7 +138,6 @@ img { display: block; }
   object-fit: cover;
 }
 
-/* ── HERO BANNER ─────────────────────────────────────────── */
 .hero-banner {
   background-color: #f0ece0;
   background-image:
@@ -169,9 +165,9 @@ img { display: block; }
   opacity: 0.9;
 }
 
-/* ── BARRA DE BÚSQUEDA ───────────────────────────────────── */
+/*barra busqeuda*/
 .search-section {
-  background-color: #2dbe6c; /* verde exacto del original */
+  background-color: #2dbe6c; 
   padding: 16px 0;
 }
 .search-inner {
@@ -214,7 +210,6 @@ img { display: block; }
 }
 .search-btn:hover { background: #27a85e; }
 
-/* ── CARRUSEL ────────────────────────────────────────────── */
 .carousel-section {
   background-color: #f0ece0;
   padding: 32px 0 24px;
@@ -261,7 +256,6 @@ img { display: block; }
   box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
-/* ── MAIN LAYOUT ─────────────────────────────────────────── */
 .main-layout {
   max-width: 1100px;
   margin: 0 auto;
@@ -273,7 +267,6 @@ img { display: block; }
 .col-main { flex: 1; display: flex; flex-direction: column; gap: 24px; }
 .col-side  { width: 280px; flex-shrink: 0; }
 
-/* ── JOIN SECTION ────────────────────────────────────────── */
 .join-section {
   text-align: center;
   padding: 8px 0 4px;
@@ -336,7 +329,7 @@ img { display: block; }
 .stat-inline-value { font-weight: 600; color: #333; }
 .stat-inline-label { color: #666; }
 
-/* ── ANNOUNCEMENTS ───────────────────────────────────────── */
+/* anuncios */
 .announcements-section { display: flex; flex-direction: column; gap: 0; }
 
 .announce-title {
