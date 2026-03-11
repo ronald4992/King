@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import './community.css'
 
-// ── DATA ──────────────────────────────────────────────────────────────────────
-
 const NAV_LINKS = ['Discussions', 'Groups', 'Categories']
 
 const GAMES_DROPDOWN = [
@@ -107,7 +105,6 @@ function Community() {
 
   return (
     <>
-      {/* ── HEADER ── */}
       <header className="header">
 
         {/* Nav izquierda */}
@@ -139,7 +136,6 @@ function Community() {
           </div>
         </nav>
 
-        {/* Logo centrado */}
         <a href="#" className="header-logo">
           <img
             src="https://us.v-cdn.net/6030983/uploads/0153892fef19f8b71fe560d089f1b461.png"
@@ -147,7 +143,6 @@ function Community() {
           />
         </a>
 
-        {/* Botones derecha */}
         <div className="header-right">
           <span className="icon-globe">🌐 ▾</span>
           <span className="icon-search">🔍</span>
@@ -157,7 +152,6 @@ function Community() {
 
       </header>
 
-      {/* ── HERO BANNER ── */}
       <div className="hero-banner">
         <div className="hero-content">
           <img
@@ -168,7 +162,7 @@ function Community() {
         </div>
       </div>
 
-      {/* ── BARRA DE BÚSQUEDA ── */}
+      {/* barra busqueda */}
       <div className="search-section">
         <div className="search-inner">
           <div className="search-box">
@@ -204,13 +198,10 @@ function Community() {
         </div>
       </div>
 
-      {/* ── MAIN ── */}
       <main className="main-layout">
 
-        {/* COLUMNA PRINCIPAL */}
         <div className="col-main">
 
-          {/* Join box — centrado, sin card blanca */}
           <div className="join-section">
             <h2 className="join-title">New here? Join the Community</h2>
             <p className="join-text">Create an account to get help, chat with other players and share feedback.</p>
@@ -220,7 +211,6 @@ function Community() {
             </div>
           </div>
 
-          {/* Stats — en línea, sin card */}
           <div className="stats-row">
             {SITE_TOTALS.map(stat => (
               <div key={stat.label} className="stat-inline">
@@ -230,7 +220,7 @@ function Community() {
             ))}
           </div>
 
-          {/* Announcements */}
+          {/* anuncios */}
           <div className="announcements-section">
             <h3 className="announce-title">LATEST ANNOUNCEMENTS</h3>
             <ul className="announcement-list">
@@ -252,7 +242,6 @@ function Community() {
 
         </div>
 
-        {/* COLUMNA LATERAL */}
         <aside className="col-side">
 
           {/* Active Members — sin card */}
@@ -272,7 +261,7 @@ function Community() {
         </aside>
       </main>
 
-      {/* ── FOOTER ── */}
+      {/* footer */}
       <footer className="footer">
         <div className="footer-inner">
           <img
