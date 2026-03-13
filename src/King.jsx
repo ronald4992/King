@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./King.css";
 import Game from './Game'
 import PostsSection from "./PostsSection";
+import Team from "./footer/Team.jsx"
 function King(){
     const [vistaActual, setVistaActual] = useState("king");
     const [Header,setHeader]=useState(["Inicio","Juegos","Trabajos"]);
@@ -58,7 +59,7 @@ function King(){
                 <li><a href="#">{Integrantes[2]}</a></li>
                 <li><a href="#">{Integrantes[3]}</a></li>
                 <li><a href="#">{Integrantes[4]}</a></li>
-                <li><a href="#">{Integrantes[5]}</a></li>
+                <li><a onClick={() => setVistaActual("team")} style={{cursor:"pointer"}}>{Integrantes[5]}</a></li>
                 <li><a href="#">{Integrantes[6]}</a></li>
                 <li><a onClick={() => setVistaActual("PostsSection")} style={{cursor:"pointer"}}>{Integrantes[7]}</a></li>
             </ul>
