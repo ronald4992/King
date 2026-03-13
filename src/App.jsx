@@ -1,12 +1,14 @@
-import "./App.css";
-import Team from "./footer/Team";
+import { useState } from 'react'
+import './App.css'
+import King from './King'
+
 
 function App() {
   return (
-    <div className="App">
-      <Team />
-    </div>
-  );
+    <>
+      <King/>
+    </>
+  )
 }
 
 export default App;
