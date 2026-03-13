@@ -1,18 +1,14 @@
 import { useState } from 'react'
-import Redeem from './redeem'
-import './redeem.css'
+import './App.css'
+import King from './King'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-       <Redeem/>
-      </div>
-     
+      <King/>
     </>
   )
 }
 
-export default App
+export default App;
