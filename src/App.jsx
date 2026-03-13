@@ -2,9 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import King from './King'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
     <>
       <King/>
@@ -12,4 +11,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
